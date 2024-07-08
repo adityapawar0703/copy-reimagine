@@ -1,3 +1,4 @@
+
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -20,20 +21,19 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 ScrollTrigger.refresh();
 
-Shery.imageEffect("#back",{style: 3,config:{"a":{"value":2,"range":[0,30]},"b":{"value":-0.44,"range":[-1,1]},"zindex":{"value":-9996999,"range":[-9999999,9999999]},"aspect":{"value":1.9626865683781616},"ignoreShapeAspect":{"value":true},"shapePosition":{"value":{"x":0.010204081632652962,"y":0}},"shapeScale":{"value":{"x":1,"y":1}},"shapeEdgeSoftness":{"value":0,"range":[0,0.5]},"shapeRadius":{"value":0,"range":[0,2]},"currentScroll":{"value":0},"scrollLerp":{"value":0.07},"gooey":{"value":true},"infiniteGooey":{"value":true},"growSize":{"value":1,"range":[1,15]},"durationOut":{"value":1,"range":[0.1,5]},"durationIn":{"value":1.5,"range":[0.1,5]},"displaceAmount":{"value":0.5},"masker":{"value":false},"maskVal":{"value":1,"range":[1,5]},"scrollType":{"value":0},"geoVertex":{"range":[1,64],"value":1},"noEffectGooey":{"value":true},"onMouse":{"value":2},"noise_speed":{"value":1.2,"range":[0,10]},"metaball":{"value":0.2,"range":[0,2],"_gsap":{"id":3}},"discard_threshold":{"value":0.5,"range":[0,1]},"antialias_threshold":{"value":0,"range":[0,0.1]},"noise_height":{"value":0.38,"range":[0,2]},"noise_scale":{"value":47.33,"range":[0,100]}},gooey:true});
+
+var sheryjsforbigscreen = function () {
+  Shery.imageEffect("#back", { style: 3, config: { "a": { "value": 2, "range": [0, 30] }, "b": { "value": -0.44, "range": [-1, 1] }, "zindex": { "value": -9996999, "range": [-9999999, 9999999] }, "aspect": { "value": 1.9626865683781616 }, "ignoreShapeAspect": { "value": true }, "shapePosition": { "value": { "x": 0.010204081632652962, "y": 0 } }, "shapeScale": { "value": { "x": 1, "y": 1 } }, "shapeEdgeSoftness": { "value": 0, "range": [0, 0.5] }, "shapeRadius": { "value": 0, "range": [0, 2] }, "currentScroll": { "value": 0 }, "scrollLerp": { "value": 0.07 }, "gooey": { "value": true }, "infiniteGooey": { "value": true }, "growSize": { "value": 1, "range": [1, 15] }, "durationOut": { "value": 1, "range": [0.1, 5] }, "durationIn": { "value": 1.5, "range": [0.1, 5] }, "displaceAmount": { "value": 0.5 }, "masker": { "value": false }, "maskVal": { "value": 1, "range": [1, 5] }, "scrollType": { "value": 0 }, "geoVertex": { "range": [1, 64], "value": 1 }, "noEffectGooey": { "value": true }, "onMouse": { "value": 2 }, "noise_speed": { "value": 1.2, "range": [0, 10] }, "metaball": { "value": 0.2, "range": [0, 2], "_gsap": { "id": 3 } }, "discard_threshold": { "value": 0.5, "range": [0, 1] }, "antialias_threshold": { "value": 0, "range": [0, 0.1] }, "noise_height": { "value": 0.38, "range": [0, 2] }, "noise_scale": { "value": 47.33, "range": [0, 100] } }, gooey: true });
+}
+sheryjsforbigscreen()
+
+// shery js for smallscreen
+Shery.imageEffect(".images", {
+  style: 3, config: { "a": { "value": 2, "range": [0, 30] }, "b": { "value": -0.44, "range": [-1, 1] }, "zindex": { "value": -9996999, "range": [-9999999, 9999999] }, "aspect": { "value": 1.9626865683781616 }, "ignoreShapeAspect": { "value": true }, "shapePosition": { "value": { "x": 0.010204081632652962, "y": 0 } }, "shapeScale": { "value": { "x": 1, "y": 1 } }, "shapeEdgeSoftness": { "value": 0, "range": [0, 0.5] }, "shapeRadius": { "value": 0, "range": [0, 2] }, "currentScroll": { "value": 0 }, "scrollLerp": { "value": 0.07 }, "gooey": { "value": true }, "infiniteGooey": { "value": true }, "growSize": { "value": 1, "range": [1, 15] }, "durationOut": { "value": 1, "range": [0.1, 5] }, "durationIn": { "value": 1.5, "range": [0.1, 5] }, "displaceAmount": { "value": 0.5 }, "masker": { "value": false }, "maskVal": { "value": 1, "range": [1, 5] }, "scrollType": { "value": 0 }, "geoVertex": { "range": [1, 64], "value": 1 }, "noEffectGooey": { "value": true }, "onMouse": { "value": 2 }, "noise_speed": { "value": 1.2, "range": [0, 10] }, "metaball": { "value": 0.2, "range": [0, 2], "_gsap": { "id": 3 } }, "discard_threshold": { "value": 0.5, "range": [0, 1] }, "antialias_threshold": { "value": 0, "range": [0, 0.1] }, "noise_height": { "value": 0.38, "range": [0, 2] }, "noise_scale": { "value": 47.33, "range": [0, 100] } }, gooey: true 
+  
+});
 
 
-// var swiper = new Swiper(".mySwiper", {
-//   loop:true,
-//   autoplay: {
-//       delay: 2500,
-//       disableOnInteraction: false,
-//     },  
-// });    
-
-
-
-//cursor animation
 
 
 var crsr = document.querySelector("#crsr")
@@ -53,7 +53,9 @@ var crsr = document.querySelector("#crsr")
   var page4=document.querySelector("#page4")
   var page5=document.querySelector("#page5")
   var page6=document.querySelector("#page6")
-  var page7=document.querySelector("#lastpage")
+  var page7=document.querySelector("#page7")
+  var page8=document.querySelector("#lastpage")
+  var page9=document.querySelector("#secondlastpage")
 
 
   page1.addEventListener("mouseenter",function(){
@@ -69,16 +71,32 @@ var crsr = document.querySelector("#crsr")
     crsr.innerHTML="NATURALS"
   })
   page5.addEventListener("mouseenter",function(){
-    crsr.innerHTML="NATURALS"
+    crsr.innerHTML="REVIEWS"
   })
   page6.addEventListener("mouseenter",function(){
     crsr.innerHTML="SCROLL & FOLLOW"
   })
   page7.addEventListener("mouseenter",function(){
-    crsr.innerHTML="NATURALS"
-  })
+    crsr.style.color="black"
+    crsr.innerHTML="SCROLL"
+    crsr.style.backgroundColor="rgba(255, 255, 255, 0.436)"
 
-  //yaha tk cursor animation tha
+  })
+  page7.addEventListener("mouseleave",function(){
+    crsr.style.color="white"
+    crsr.style.backgroundColor="rgba(0, 0, 0, 0.662)"
+
+  })
+  page8.addEventListener("mouseenter",function(){
+    crsr.style.display="none"
+  })
+  page8.addEventListener("mouseleave",function(){
+    crsr.style.display="flex"
+    //  crsr.style.display=""
+  })
+  page9.addEventListener("mouseenter",function(){
+    crsr.innerHTML="EXPLORE"
+  })
 
 
 
@@ -98,56 +116,111 @@ var tml=gsap.timeline()
         x:250,
         duration:1,
         opacity:0,
-        stagger:0.25
+        stagger:0.1
 
     })
+    
     tml.pause() 
 
     menu.addEventListener("click",function(){
       menu.style.display="none";
       // menu.style.pointerEvents="none"
         tml.play();
+      document.querySelector("#page1 button").style.display="none"
+
     })
     close.addEventListener("click",function(){
       tml.reverse();
       gsap.to(menu,{
-        delay:2,
+        delay:1,
         display:"initial"
       })
-      // menu.style.
+      gsap.to("#page1 button",{
+        display:"inline",
+        delay:1.8
+      })
+     
 
     })
 
 
 
-//page2COLLAGEPAGE ANIMATION/////////////////////////////////////////////////////////////////////////////////////////////
-
-var page2h1Text=document.querySelector("#page2 #page2left h1").textContent
-var splittedText=page2h1Text.split("")
-var cluttered=""
-splittedText.forEach(function(elem){
-    cluttered+= `<span>${elem}</span>`
-})
-document.querySelector("#page2 #page2left h1").innerHTML=cluttered
-
-gsap.to("#page2 #page2left h1 span",{
-    color:"black",
-    stagger:0.1,
-    scrollTrigger:{
-        trigger:"#page2",
-        scroller:"#main",
-        start:"top 40%",
-        end:"top top",
-        scrub:2,
-        // pin:true
-    }
-})
 
 
+    gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
 
+document.addEventListener('DOMContentLoaded', () => {
+  const polaroids = document.querySelectorAll('.polaroid');
 
+  const paths = [
+    [{ x: 100, y: 50 }, { x: 200, y: 0 }, { x: 300, y: 100 }, { x: 0, y: 0 }],
+    [{ x: 100, y: -50 }, { x: 200, y: 0 }, { x: 300, y: -100 }, { x: 0, y: 0 }],
+    [{ x: -100, y: 50 }, { x: -200, y: 0 }, { x: -300, y: 100 }, { x: 0, y: 0 }],
+    [{ x: -100, y: -50 }, { x: -200, y: 0 }, { x: -300, y: -100 }, { x: 0, y: 0 }],
+    [{ x: 100, y: 50 }, { x: 200, y: 0 }, { x: 300, y: 100 }, { x: 0, y: 0 }],
+  ];
 
+  const tlpage2 = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#page2",
+      scroller: "#main",
+      markers: false,
+      start: "top 25%",
+      end: "top -10%",
+      scrub: true,
+      pin: true,
+    },
+  });
 
+  // Animate text within #page2right h1
+  const page2h1 = document.querySelector("#page2 #page2right h1");
+  const page2h1Text = page2h1.textContent;
+  const splittedText = page2h1Text.split("");
+  let cluttered = "";
+  splittedText.forEach(function(elem) {
+    cluttered += `<span>${elem}</span>`;
+  });
+  page2h1.innerHTML = cluttered;
+
+  tlpage2.to("#page2 #page2right h1 span", {
+    color: "black",
+    stagger: 0.1,
+  });
+
+  // Animate polaroids with motion paths
+  polaroids.forEach((polaroid, index) => {
+    const pathIndex = index % paths.length;
+    tlpage2.fromTo(polaroid, {
+      motionPath: {
+        path: paths[pathIndex],
+        curviness: 1.25,
+        autoRotate: false,
+      },
+      rotate: () => gsap.utils.random(-30, 30),
+      scale: 0.5,
+      opacity: 0,
+    }, {
+      motionPath: {
+        path: paths[pathIndex],
+        curviness: 1.25,
+        autoRotate: false,
+      },
+      duration: 2.5,
+      rotate: 0,
+      scale: 1,
+      opacity: 1,
+      delay: index * 0.5,
+      ease: "power1.inOut",
+      onComplete: () => {
+        gsap.to(polaroid, {
+          rotate: gsap.utils.random(-15, 15),
+          duration: 0.5,
+          ease: "power1.inOut",
+        });
+      },
+    });
+  });
+});
 
 
 // page1 =>
@@ -187,6 +260,8 @@ elems.forEach(function(elem){
 
 
     document.querySelector("#page3").addEventListener("click",function(){
+   
+    
             if(!animating){
                 animating=true
 
@@ -251,6 +326,41 @@ elems.forEach(function(elem){
 })
 
 
+//last2nd page animation
+
+var elementconatiner2 = document.querySelector("#secondlastpage #element-container")
+    elementconatiner2.addEventListener("mouseenter",function(){
+        gsap.to("#image-div",{
+            opacity:1
+        })
+    })
+    elementconatiner2.addEventListener("mouseleave",function(){
+        gsap.to("#image-div",{
+            opacity:0
+        })
+    })
+    
+    var AllElements = document.querySelectorAll("#secondlastpage .element")
+    var  imgdiv = document.querySelector("#secondlastpage #image-div")
+    var movingImage = document.querySelector("#secondlastpage #image-div img")
+    AllElements.forEach(function(elem){
+      elem.addEventListener("mouseenter",function(){
+        let image = elem.getAttribute("data-image")
+        movingImage.setAttribute("src",image)
+      })
+            elementconatiner2.addEventListener("mousemove",function(dets){
+                gsap.to("#image-div",{
+                   left:`${dets.x-elementconatiner2.getBoundingClientRect().x}`,
+                   top:`${dets.y-elementconatiner2.getBoundingClientRect().y}`,
+                   duration:0.3,
+                   ease:"power1.out"
+        })
+      })
+  })
+
+
+
+
 
 
   
@@ -259,14 +369,16 @@ var tl = gsap.timeline({
   scrollTrigger:{
    scroller:'#main',
    trigger:'#page6',
-   start:'top top',
+   start:'top -10%',
+   end:"top 50%",
    pin:true,
-   scrub:3
+   scrub:5
   }
 })
 tl
 .to('.containerlast',{
-   left:'-100%'
+   left:'-100%',
+   duration:2
 })
 
 var tl2 = gsap.timeline({
@@ -284,41 +396,109 @@ tl2
 
 })
 
-var page5swiper = new Swiper("#page5 .page5swiper", {
-  slidesPerView: 3,
+
+//page7 animation ingredients story
+document.addEventListener('DOMContentLoaded', () => {
+  tl7.from("#ing1text h1", {
+    duration: 1,
+    opacity: 0,
+    y: -50,
+    ease: "power1.out"
+  });
+
+  tl7.from("#ing1text p", {
+    duration: 1,
+    opacity: 0,
+    y: 50,
+    ease: "power1.out",
+    delay: 0.5
+  });
+});
+
+
+var tl7=gsap.timeline({
+  scrollTrigger:{
+      trigger:"#page7",
+      scroller:"#main",
+      markers:false,
+      start:"top -40%",
+      end:"top -100%",
+      scrub:true,
+      pin:true
+  }
+
+})
+tl7.from("#ing1",{
+  x:-500,
+  rotate:-45,
+  duration:1,
+  opacity:0,
+  
+})
+tl7.from("#ing2",{
+  x:500,
+  rotate:45,
+  duration:1,
+  opacity:0,
+  
+})
+tl7.from("#ing3",{
+  x:500,
+  rotate:45,
+  duration:1,
+  opacity:0,
+  
+})
+  var page5swiper = new Swiper("#page5 .page5swiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      // When window width is >= 768px
+      768: {
+        slidesPerView: 2,
+      },
+      // When window width is >= 1024px
+      1024: {
+        slidesPerView: 3,
+      }
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+
+
+
+// Initialize Swiper
+// Initialize Swiper
+var swiper8 = new Swiper("#page4 .page4Swiper", {
+  slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
 });
-
-
-
-
-    
-var swiper8 = new Swiper("#page4 .mySwiper", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  
-  
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
-
 
 const arrr=[
   {productImage:"https://media.istockphoto.com/id/470731269/photo/scoops-of-mango-sorbet.webp?b=1&s=170667a&w=0&k=20&c=bgm0vYICaCE0lGxKh19LVCwEeTVYvy0NJmcEoHPzeNY=",
@@ -365,86 +545,32 @@ season:"Winter"
   }  
   
 ]
-var main2=document.querySelector("#page4 .swiper-wrapper")
 
-var clutter=""
+// Generate slides and append to Swiper
+const swiperWrapper = document.querySelector("#page4 .swiper-wrapper");
+swiperWrapper.innerHTML = arrr.map(product => `
+  <div class="swiper-slide">
+    <img src="${product.productImage}" alt="${product.productName}">
+  </div>
+`).join('');
 
-
-
-arrr.forEach(function(product){
-  clutter+=`
-  
-                  <div class="swiper-slide"><img src="${product.productImage}" alt=""></div>
-                  
-                `
-                
-})
-main2.innerHTML=clutter
-
+// Update product details on slide change
 const productContainer = document.getElementById("productname");
 const descriptionContainer = document.getElementById("description");
 
 swiper8.on('slideChange', function () {
-const currentSlideIndex = this.activeIndex;
-// Calculate index within the array boundaries
-const effectiveIndex = currentSlideIndex % arrr.length; // modulo operator (%)
-const product = arrr[effectiveIndex];
+  const currentSlideIndex = this.activeIndex;
+  const effectiveIndex = currentSlideIndex % arrr.length;
+  const product = arrr[effectiveIndex];
 
-productContainer.textContent = product.productName;
-descriptionContainer.textContent = product.productDes;
+  productContainer.textContent = product.productName;
+  descriptionContainer.textContent = product.productDes;
 
-// Optional: Update background image based on season
-if (product.seasonImage) {
-  document.getElementById("page4").style.backgroundImage = `url(${product.seasonImage})`;
-}
+  if (product.seasonImage) {
+    document.getElementById("page4").style.backgroundImage = `url(${product.seasonImage})`;
+  }
 });
 
-
-
-const swiperWrapper = document.querySelector("#page4 .swiper-wrapper");
-
-// Assuming "arrr" contains your JSON data
-arrr.forEach(function(product) {
-const slide = document.createElement("div"); // Create a slide element
-slide.classList.add("#page4 swiper-slide"); // Add the "swiper-slide" class
-
-// Create and configure slide content based on your product object (product.productName, product.productImage, etc.)
-const slideContent = `
-
-  <img src="${product.productImage}" alt="${product.productName}">
-
-
-  <h1>${product.productName}</h1>
-  
-  <p>${product.productDes}</p>
-`; // Example slide content (replace with your own)
-
-slide.innerHTML = slideContent;
-swiperWrapper.appendChild(slide); // Add the slide to the carousel
-});
-const prevButton = document.getElementById("prevButton");
-const nextButton = document.getElementById("nextButton");
-
-prevButton.addEventListener("click", function() {
-swiper.slidePrev();
-});
-
-nextButton.addEventListener("click", function() {
-swiper.slideNext();
-});
-
-
-
-
-
-
-//cursor animation
-
-var crsr = document.querySelector("#cursor")
-
-  document.addEventListener("mousemove", function (dets) {
-      gsap.to(crsr, {
-          x: dets.x,
-          y: dets.y
-      })
-  })
+// Navigation buttons
+document.getElementById("prevButton").addEventListener("click", () => swiper8.slidePrev());
+document.getElementById("nextButton").addEventListener("click", () => swiper8.slideNext());
